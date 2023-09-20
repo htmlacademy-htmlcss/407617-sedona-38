@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Александр Устюгов](https://up.htmlacademy.ru/htmlcss/38/user/407617).
-* Наставник: `Неизвестно`.
+* Студент: [Sasha Komlev](https://up.htmlacademy.ru/htmlcss/38/user/407617).
+* Наставник: `Андрей Грачев`.
 
 ---
 
