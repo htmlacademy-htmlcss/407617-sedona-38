@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Sasha Komlev](https://up.htmlacademy.ru/htmlcss/38/user/407617).
-* Наставник: `Андрей Грачев`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
 
 ---
 
