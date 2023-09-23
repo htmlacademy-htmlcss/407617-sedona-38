@@ -2,7 +2,7 @@
 <html lang="ru">
 
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <base href="https://htmlacademy-htmlcss.github.io/407617-sedona-38/2/">
 </head>
@@ -25,8 +25,16 @@
           </li>
         </ul>
         <ul class="user-navigation-list">
-          <li class="user-navigation-item"><a href="#">Поиск</a></li>
-          <li class="user-navigation-item"><a href="#">Избранное</a></li>
+          <li class="user-navigation-item">
+            <a href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="user-navigation-item">
+            <a href="#">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
         </ul>
         <button class="button">
           Хочу сюда!
@@ -35,7 +43,7 @@
     </header>
 
     <main class="main-catalog">
-      <h1 class="visually-hidden">Гостиницы Седоны</h1>
+      <h1 class="main-catalog-title title">Гостиницы Седоны</h1>
 
 
       <section class="filter">
@@ -53,8 +61,26 @@
           </li>
         </ul>
 
-        <!-- Make a form -->
+        <!-- Mark up the form -->
 
+        <span class="search-name">Найдено гостиниц:</span>
+        <span class="search-result">38</span>
+
+        <!-- Find out about the contents of the select -->
+
+        <select name="priority" id="priority">
+          <option value="cheap">Сначала дешевые</option>
+        </select>
+
+        <button class="group-small-cards">
+          <span class="visually-hidden">Сгруппировать маленькими карточками</span>
+        </button>
+        <button class="group-big-cards">
+          <span class="visually-hidden">Сгруппировать большими карточками</span>
+        </button>
+        <button class="group-list">
+          <span class="visually-hidden">Сгруппировать списком</span>
+        </button>
       </section>
 
       <section class="cards">
@@ -128,9 +154,9 @@
         </ul>
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe subscribe-catalog">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <p class="subscribe-title title">Подпишитесь на рассылку</p>
+        <p class="subscribe-title section-title">Подпишитесь на рассылку</p>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
