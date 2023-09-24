@@ -60,7 +60,49 @@
           </li>
         </ul>
 
-        <!-- Mark up the form -->
+        <form class="catalog-form" action="https://echo.htmlacademy.ru" method="get" target="_blank">
+          <fieldset class="filter-item">
+            <legend class="filter-item-title">Инфраструктура:</legend>
+            <ul class="filter-checkbox-list">
+              <li class="filter-checkbox-item">
+                <input class="filter-checkbox-input" type="checkbox" name="infrastructure" id="pool" checked>
+                <label class="filter-checkbox-label" for="pool">Бассейн</label>
+              </li>
+              <li class="filter-checkbox-item">
+                <input class="filter-checkbox-input" type="checkbox" name="infrastructure" id="parking" checked>
+                <label class="filter-checkbox-label" for="parking">Парковка</label>
+              </li>
+              <li class="filter-checkbox-item">
+                <input class="filter-checkbox-input" type="checkbox" name="infrastructure" id="wi-fi">
+                <label class="filter-checkbox-label" for="wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend class="filter-item-title">Тип жилья:</legend>
+            <ul class="filter-radio-list">
+              <li class="filter-radio-item">
+                <input class="filter-radio-input" type="radio" name="type" value="hotel" id="hotel" checked>
+                <label class="filter-radio-label" for="hotel">Гостиница</label>
+              </li>
+              <li class="filter-radio-item">
+                <input class="filter-radio-input" type="radio" name="type" value="motel" id="motel">
+                <label class="filter-radio-label" for="motel">Мотель</label>
+              </li>
+              <li class="filter-radio-item">
+                <input class="filter-radio-input" type="radio" name="type" value="apartments" id="apartments">
+                <label class="filter-radio-label" for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend class="filter-item-title">Стоимость, ₽:</legend>
+            <input type="number" name="min-price" value="0" placeholder="от">
+            <input type="number" name="max-price" value="9000" placeholder="до">
+          </fieldset>
+          <input class="filter-button button" type="submit" value="Применить">
+          <input  class="filter-button__reset button" type="reset" value="Сбросить">
+        </form>
 
         <span class="search-name">Найдено гостиниц:</span>
         <span class="search-result">38</span>
@@ -88,8 +130,7 @@
           <li class="cards-item">
             <article>
               <h3 class="cards-item-title">Amara Resort & Spa</h3>
-              <img class="cards-image" src="#" alt=""> <!--Make a description-->
-              <span class="cards-item-service">Гостиница</span>
+              <img class="cards-image" src="#" alt="Вид на звёздное небо">
               <b class="cards-item-price">От 4000 ₽</b>
               <a class="cards-item-link button" href="#">Подробнее</a>
               <button class="button">В избранное</button>
@@ -99,7 +140,7 @@
           <li class="cards-item">
             <article>
               <h3 class="cards-item-title">Villas at Poco Diablo</h3>
-              <img class="cards-image" src="#" alt=""> <!--Make a description-->
+              <img class="cards-image" src="#" alt="Скала на фоне тучи и радуги">
               <span class="cards-item-service">Гостиница</span>
               <b class="cards-item-price">От 5000 ₽</b>
               <a class="cards-item-link button" href="#">Подробнее</a>
@@ -110,7 +151,7 @@
           <li class="cards-item">
             <article>
               <h3 class="cards-item-title">Desert Quail Inn</h3>
-              <img class="cards-image" src="#" alt=""> <!--Make a description-->
+              <img class="cards-image" src="#" alt="Скала на фоне рассвета">
               <span class="cards-item-service">Гостиница</span>
               <b class="cards-item-price">От 2500 ₽</b>
               <a class="cards-item-link button" href="#">Подробнее</a>
@@ -121,7 +162,7 @@
           <li class="cards-item">
             <article>
               <h3 class="cards-item-title">GreenTree Inn</h3>
-              <img class="cards-image" src="#" alt=""> <!--Make a description-->
+              <img class="cards-image" src="#" alt="Скала на фоне звёздного неба">
               <span class="cards-item-service">Гостиница</span>
               <b class="cards-item-price">От 1500 ₽</b>
               <a class="cards-item-link button" href="#">Подробнее</a>
