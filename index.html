@@ -7,7 +7,7 @@
   </head>
 
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="page-navigation">
         <a class="page-header-logo">
           <img class="logo" src="#" alt="Логотип компании.">
@@ -17,7 +17,7 @@
             <a class="page-navigation-link">Главная</a>
           </li>
           <li class="page-navigation-item">
-            <a class="page-navigation-link" href="#">О седоне</a>
+            <a class="page-navigation-link" href="#">О Седоне</a>
           </li>
           <li class="page-navigation-item">
             <a class="page-navigation-link" href="catalog.html">Гостиницы</a>
@@ -35,21 +35,19 @@
             </a>
           </li>
         </ul>
-        <button class="button">
-          Хочу сюда!
-        </button>
+        <a class="user-navigation-link button" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-index" data-test="main">
       <h1 class="visually-hidden">Сайт туристического городка в штате Аризона</h1>
 
-      <section class="promo">
+      <section class="promo" data-test="hero">
         <h2 class="visually-hidden">Промо блок</h2>
         <img src="#" alt="Надпись: Welcome to the gorgeous Sedona.">
       </section>
 
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества города Седона</h2>
         <p class="advantages-headline headline">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -80,7 +78,7 @@
         </ul>
       </section>
 
-      <section class="services">
+      <section class="services" data-test="services">
         <h2 class="visually-hidden">Услуги</h2>
         <p class="services-title section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="services-description">Опытный персонал и качественное обслуживание!</p>
@@ -100,7 +98,7 @@
         </ul>
       </section>
 
-      <section class="search">
+      <section class="search" data-test="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="search-title section-title">Заинтересовались?</p>
         <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
@@ -110,7 +108,7 @@
         </button>
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p class="subscribe-title section-title">Подпишитесь на рассылку</p>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -121,7 +119,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
 
       <div class="social">
         <ul class="social-list">
