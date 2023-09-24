@@ -64,15 +64,15 @@
             <legend class="filter-item-title">Инфраструктура:</legend>
             <ul class="filter-checkbox-list">
               <li class="filter-checkbox-item">
-                <input class="filter-checkbox-input" type="checkbox" name="infrastructure" id="pool" checked>
+                <input class="filter-checkbox-input" type="checkbox" name="pool" id="pool" checked>
                 <label class="filter-checkbox-label" for="pool">Бассейн</label>
               </li>
               <li class="filter-checkbox-item">
-                <input class="filter-checkbox-input" type="checkbox" name="infrastructure" id="parking" checked>
+                <input class="filter-checkbox-input" type="checkbox" name="parking" id="parking" checked>
                 <label class="filter-checkbox-label" for="parking">Парковка</label>
               </li>
               <li class="filter-checkbox-item">
-                <input class="filter-checkbox-input" type="checkbox" name="infrastructure" id="wi-fi">
+                <input class="filter-checkbox-input" type="checkbox" name="wi-fi" id="wi-fi">
                 <label class="filter-checkbox-label" for="wi-fi">Wi-Fi</label>
               </li>
             </ul>
@@ -96,10 +96,14 @@
           </fieldset>
           <fieldset class="filter-item">
             <legend class="filter-item-title">Стоимость, ₽:</legend>
-            <label for="min-price">От</label>
-            <input type="number" name="min-price" value="0">
-            <label for="max-price">До</label>
-            <input type="number" name="max-price" value="9000">
+            <p class="input-box">
+              <label for="min-price">От</label>
+              <input type="number" name="min-price" value="0">
+            </p>
+            <p class="input-box">
+              <label for="max-price">До</label>
+              <input type="number" name="max-price" value="9000">
+            </p>
           </fieldset>
           <input class="filter-button button" type="submit" value="Применить">
           <input  class="filter-button__reset button" type="reset" value="Сбросить">
