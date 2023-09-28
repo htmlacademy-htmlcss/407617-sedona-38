@@ -7,10 +7,10 @@
     <base href="https://htmlacademy-htmlcss.github.io/407617-sedona-38/2/">
 </head>
 
-  <body class="page-body" data-test="header">
-    <header class="page-header">
+  <body class="page-body">
+    <header class="page-header"  data-test="header">
       <nav class="page-navigation">
-        <a class="page-header-logo">
+        <a href="index.html" class="page-header-logo">
           <img class="logo" src="#" alt="Логотип компании.">
         </a>
         <ul class="page-navigation">
@@ -31,7 +31,8 @@
             </a>
           </li>
           <li class="user-navigation-item">
-            <a href="#">12
+            <a href="#">
+              <span>12</span>
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
@@ -46,7 +47,7 @@
 
       <section class="filter" data-test="filter">
         <h2 class="visually-hidden">Фильтр</h2>
-        <ul class="breadcrumbs">
+        <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-item-link" href="index.html">
               <span class="breadcrumbs-item-link-title visually-hidden">Главная</span>
@@ -54,12 +55,12 @@
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-item-link">
-              <span class="breadcrumbs-item-link-title">Гостиницы</span>
+              Гостиницы
             </a>
           </li>
-        </ul>
+        </ol>
 
-        <form class="catalog-form" action="https://echo.htmlacademy.ru" method="get" target="_blank">
+        <form class="catalog-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-item">
             <legend class="filter-item-title">Инфраструктура:</legend>
             <ul class="filter-checkbox-list">
@@ -96,42 +97,46 @@
           </fieldset>
           <fieldset class="filter-item">
             <legend class="filter-item-title">Стоимость, ₽:</legend>
-            <p class="input-box">
+            <!-- <p class="input-box"> -->
               <label class="input-box-label" for="min-price">От</label>
               <input class="input-box-field" type="number" name="min-price" value="0" id="min-price">
-            </p>
-            <p class="input-box">
+            <!-- </p> -->
+            <!-- <p class="input-box"> -->
               <label class="input-box-label" for="max-price">До</label>
               <input class="input-box-field" type="number" name="max-price" value="9000" id="max-price">
-            </p>
+            <!-- </p> -->
+            <button></button>
+            <button></button>
           </fieldset>
-          <input class="filter-button button" type="submit" value="Применить">
-          <input  class="filter-button__reset button" type="reset" value="Сбросить">
+          <button class="filter-button button" type="submit">Применить</button>
+          <button class="filter-button__reset button" type="reset">Сбросить</button>
         </form>
 
-        <span class="search-name">Найдено гостиниц:</span>
-        <span class="search-result">38</span>
-
-        <!-- Find out about the contents of the select -->
+        <p class="search-name">Найдено гостиниц:
+          <span class="search-result">38</span>
+        </p>
 
         <select name="priority" id="priority">
           <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="high-rating">Высокий рейтинг</option>
+          <option value="low-rating">Низкий рейтинг</option>
         </select>
 
         <ul class="switches-list">
           <li class="switches-item">
-            <button class="group-small-cards">
-              <span class="visually-hidden">Сгруппировать маленькими карточками</span>
+            <button class="group-small-cards" type="button">
+              <span class="visually-hidden">Маленькие карточки</span>
             </button>
           </li>
           <li class="switches-item">
-            <button class="group-big-cards">
-              <span class="visually-hidden">Сгруппировать большими карточками</span>
+            <button class="group-big-cards" type="button">
+              <span class="visually-hidden">Большие карточки</span>
             </button>
           </li>
           <li class="switches-item">
-            <button class="group-list">
-              <span class="visually-hidden">Сгруппировать списком</span>
+            <button class="group-list" type="button">
+              <span class="visually-hidden">Список</span>
             </button>
           </li>
         </ul>
@@ -142,61 +147,62 @@
         <ul class="cards-list">
           <li class="cards-item">
             <article>
-              <a class="cards-item-title-link" href="#">
+              <a class="cards-item-link" href="#">
                 <h3 class="cards-item-title">Amara Resort & Spa</h3>
-              </a>
-              <a class="cards-item-image-link" href="#">
                 <img class="cards-image" src="#" alt="Звёздное небо в расщелине скал">
               </a>
-              <b class="cards-item-price">От 4000 ₽</b>
+              <span class="cards-item-service">Гостиница</span>
+              <span class="cards-item-price">От 4000 ₽</span>
               <a class="cards-item-link button" href="#">Подробнее</a>
-              <button class="button">В избранное</button>
-              <span class="cards-item-rating">Рейтинг: 8,5</span>
+              <button class="button" type="button">В избранное</button>
+              <p class="cards-item-rating">Рейтинг:
+                <span>8,5</span>
+              </p>
             </article>
           </li>
           <li class="cards-item">
             <article>
-              <a class="cards-item-title-link" href="#">
+              <a class="cards-item-link" href="#">
                 <h3 class="cards-item-title">Villas at Poco Diablo</h3>
-              </a>
-              <a class="cards-item-image-link" href="#">
                 <img class="cards-image" src="#" alt="Скала на фоне тучи и радуги">
               </a>
               <span class="cards-item-service">Гостиница</span>
-              <b class="cards-item-price">От 5000 ₽</b>
+              <span class="cards-item-price">От 5000 ₽</span>
               <a class="cards-item-link button" href="#">Подробнее</a>
-              <button class="button-active button">В избранном</button>
-              <span class="cards-item-rating">Рейтинг: 9,2</span>
+              <button class="button-active button" type="button">В избранном</button>
+              <p class="cards-item-rating">Рейтинг:
+                <span>9,2</span>
+              </p>
             </article>
           </li>
           <li class="cards-item">
             <article>
-              <a class="cards-item-title-link" href="#">
+              <a class="cards-item-link" href="#">
                 <h3 class="cards-item-title">Desert Quail Inn</h3>
-              </a>
-              <a class="cards-item-title-link" href="#">
                 <img class="cards-image" src="#" alt="Скала на фоне рассвета">
               </a>
               <span class="cards-item-service">Гостиница</span>
-              <b class="cards-item-price">От 2500 ₽</b>
+              <span class="cards-item-price">От 2500 ₽</span>
               <a class="cards-item-link button" href="#">Подробнее</a>
-              <button class="button-active button">В избранное</button>
-              <span class="cards-item-rating">Рейтинг: 6,9</span>
+              <button class="button" type="button">В избранное</button>
+              <p class="cards-item-rating">Рейтинг:
+                <span>6,9</span>
+              </p>
             </article>
           </li>
           <li class="cards-item">
             <article>
-              <a class="cards-item-title-link" href="#">
+              <a class="cards-item-link" href="#">
                 <h3 class="cards-item-title">GreenTree Inn</h3>
-              </a>
-              <a class="cards-item-title-link" href="#">
                 <img class="cards-image" src="#" alt="Скала на фоне звёздного неба">
               </a>
               <span class="cards-item-service">Гостиница</span>
-              <b class="cards-item-price">От 1500 ₽</b>
+              <span class="cards-item-price">От 1500 ₽</span>
               <a class="cards-item-link button" href="#">Подробнее</a>
-              <button class="button-active button">В избранное</button>
-              <span class="cards-item-rating">Рейтинг: 5,0</span>
+              <button class="button" type="button">В избранное</button>
+              <p class="cards-item-rating">Рейтинг:
+                <span>5,0</span>
+              </p>
             </article>
           </li>
         </ul>
