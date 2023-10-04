@@ -114,7 +114,7 @@ img {
 
 .hero {
   background-color: #82b3d380;
-  background-image: url('../images/content/catalog/hero-background.jpg');
+  background-image: url("../images/content/catalog/hero-background.jpg");
   background-size: 100%, auto;
   background-repeat: no-repeat;
 }
@@ -174,7 +174,7 @@ img {
 .subscribe-index {
   color: #ffffff;
   background-color: #82b3d380;
-  background-image: url('../images/content/catalog/subscribe-blur-photo.jpg');
+  background-image: url("../images/content/catalog/subscribe-blur-photo.jpg");
   background-size: 100%, auto;
   background-repeat: no-repeat;
 }
@@ -201,7 +201,7 @@ img {
   padding-top: 121px;
   color: #ffffff;
   background-color: #82b3d380;
-  background-image: url('../images/content/catalog/catalog-blur-photo.jpg');
+  background-image: url("../images/content/catalog/catalog-blur-photo.jpg");
   background-size: 100%, auto;
   background-repeat: no-repeat;
 }
