@@ -38,7 +38,7 @@ img {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background: #ffffff;
+  background: #f2f2f2;
   margin: 0;
 }
 
@@ -96,7 +96,7 @@ img {
   line-height: 10px;
   text-align: center;
   color: #ffffff;
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 /* Footer */
@@ -113,7 +113,7 @@ img {
 }
 
 .hero {
-  background-color: #82B3D380;
+  background-color: #82b3d380;
   background-image: url('../images/content/catalog/hero-background.jpg');
   background-size: 100%, auto;
   background-repeat: no-repeat;
@@ -124,7 +124,7 @@ img {
 }
 
 .advantages-item {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantages-item-headline {
@@ -138,11 +138,11 @@ img {
 
 .advantages-item:nth-child(2),
 .advantages-item:nth-child(4) {
-  background-color: #82B3D312;
+  background-color: #82b3d312;
 }
 
 .advantages-item:nth-child(3) {
-  background-color: #82B3D320;
+  background-color: #82b3d320;
 }
 
 .advantages-item-contain,
@@ -163,7 +163,7 @@ img {
 
 .services-item:first-child,
 .services-item:last-child {
-  background-color: #82B3D312;
+  background-color: #82b3d312;
 }
 
 .search-button {
@@ -173,7 +173,7 @@ img {
 
 .subscribe-index {
   color: #ffffff;
-  background-color: #82B3D380;
+  background-color: #82b3d380;
   background-image: url('../images/content/catalog/subscribe-blur-photo.jpg');
   background-size: 100%, auto;
   background-repeat: no-repeat;
@@ -186,29 +186,29 @@ img {
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 /* Catalog */
 
 .main-catalog-title {
-  /* position: absolute; */
+  position: absolute;
   color: #ffffff;
   cursor: default;
 }
 
 .filter {
-  /* padding-top: 121px; */
+  padding-top: 121px;
   color: #ffffff;
-  background-color: #82B3D380;
+  background-color: #82b3d380;
   background-image: url('../images/content/catalog/catalog-blur-photo.jpg');
   background-size: 100%, auto;
   background-repeat: no-repeat;
 }
 
-/* .filter-form {
+.filter-form {
   display: flex;
-} */
+}
 
 .filter-item {
   border: none;
@@ -228,12 +228,12 @@ img {
 .input-box-label {
   font-size: 18px;
   line-height: 24px;
-  color: #F2F2F2;
+  color: #f2f2f2;
   text-transform: lowercase;
 }
 
 .filter-button {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .filter-button__reset {
@@ -268,21 +268,21 @@ img {
 }
 
 .cards-button {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .cards-button__active {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .pagination-item-link {
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .pagination-item-link__current {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pagination-item-link__empty {
