@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="icon" href="images/favicons/favicon.ico">
     <link rel="stylesheet" href="styles/style.css">
   </head>
@@ -16,15 +15,15 @@
         <a class="page-header-logo link" href="index.html">
           <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип компании.">
         </a>
-        <ul class="page-navigation list">
+        <ul class="page-navigation-list list">
           <li class="page-navigation-item">
             <a class="page-navigation-link link" href="index.html">Главная</a>
           </li>
           <li class="page-navigation-item">
             <a class="page-navigation-link link" href="#">О Седоне</a>
           </li>
-          <li class="page-navigation-item">
-            <a class="page-navigation-link link">Гостиницы</a>
+          <li class="page-navigation-item page-navigation-item-current">
+            <a class="page-navigation-link link page-navigation-link-current">Гостиницы</a>
           </li>
         </ul>
         <ul class="user-navigation-list list">
@@ -39,20 +38,22 @@
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
+          <li class="user-navigation-item">
+            <a class="user-navigation-link link user-navigation-button button" href="#">Хочу сюда!</a>
+          </li>
         </ul>
-        <a class="user-navigation-link link user-navigation-button button" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
-    <main class="main-catalog" data-test="main">
+    <main class="main-catalog main-container" data-test="main">
       <h1 class="main-catalog-title title">Гостиницы Седоны</h1>
 
       <section class="filter" data-test="filter">
         <h2 class="visually-hidden">Фильтр</h2>
         <ol class="breadcrumbs list">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-item-link link" href="index.html">
-              <span class="breadcrumbs-item-link-title visually-hidden">Главная</span>
+            <a class="breadcrumbs-item-link breadcrumbs-item-link-home link" href="index.html">
+              <span class="visually-hidden">Главная</span>
             </a>
           </li>
           <li class="breadcrumbs-item">
@@ -110,18 +111,18 @@
           </fieldset>
           <div class="filter-button-box">
             <button class="filter-button button" type="submit">Применить</button>
-            <button class="filter-button__reset button" type="reset">Сбросить</button>
+            <button class="filter-button-reset button" type="reset">Сбросить</button>
           </div>
         </form>
       </section>
 
-      <section class="search-grouping">
+      <section class="search-group">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <p class="search-name">Найдено гостиниц:
           <span class="search-result">38</span>
         </p>
 
-        <select name="priority" id="priority">
+        <select class="search-priority" name="priority" id="priority">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="high-rating">Высокий рейтинг</option>
@@ -151,10 +152,13 @@
         <h2 class="visually-hidden">Карточки товаров</h2>
         <ul class="cards-list list">
           <li class="cards-item">
-            <article>
+            <article class="cards-box">
               <a class="cards-item-link link" href="#">
                 <h3 class="cards-item-title">Amara Resort & Spa</h3>
-                <img class="cards-image" src="images/content/product/hotel-1.jpg" width="300" height="212" alt="Звёздное небо в расщелине скал.">
+              </a>
+              <a class="cards-item-image" href="#">
+                <img class="cards-image" src="images/content/product/hotel-1.jpg" width="300" height="212"
+                  alt="Звёздное небо в расщелине скал.">
               </a>
               <span class="cards-item-service">Гостиница</span>
               <span class="cards-item-price">От 4000 ₽</span>
@@ -173,15 +177,18 @@
             </article>
           </li>
           <li class="cards-item">
-            <article>
+            <article class="cards-box">
               <a class="cards-item-link link" href="#">
                 <h3 class="cards-item-title">Villas at Poco Diablo</h3>
-                <img class="cards-image" src="images/content/product/hotel-2.jpg" width="300" height="212" alt="Скала на фоне тучи и радуги.">
+              </a>
+              <a class="cards-item-image" href="#">
+                <img class="cards-image" src="images/content/product/hotel-2.jpg" width="300" height="212"
+                  alt="Скала на фоне тучи и радуги.">
               </a>
               <span class="cards-item-service">Гостиница</span>
               <span class="cards-item-price">От 5000 ₽</span>
               <a class="cards-item-link link button" href="#">Подробнее</a>
-              <button class="cards-button cards-button__active button" type="button">В избранном</button>
+              <button class="cards-button cards-button-active button" type="button">В избранном</button>
               <div class="contaner-stars">
                 <img src="#" alt="4 из 5 звёзд.">
                 <img src="#" alt="">
@@ -195,10 +202,13 @@
             </article>
           </li>
           <li class="cards-item">
-            <article>
+            <article class="cards-box">
               <a class="cards-item-link link" href="#">
                 <h3 class="cards-item-title">Desert Quail Inn</h3>
-                <img class="cards-image" src="images/content/product/hotel-3.jpg" width="300" height="212" alt="Скала на фоне рассвета.">
+              </a>
+              <a class="cards-item-image" href="#">
+                <img class="cards-image" src="images/content/product/hotel-3.jpg" width="300" height="212"
+                  alt="Скала на фоне рассвета.">
               </a>
               <span class="cards-item-service">Гостиница</span>
               <span class="cards-item-price">От 2500 ₽</span>
@@ -217,10 +227,13 @@
             </article>
           </li>
           <li class="cards-item">
-            <article>
+            <article class="cards-box">
               <a class="cards-item-link link" href="#">
                 <h3 class="cards-item-title">GreenTree Inn</h3>
-                <img class="cards-image" src="images/content/product/hotel-4.jpg" width="300" height="212" alt="Скала на фоне звёздного неба.">
+              </a>
+              <a class="cards-item-image" href="#">
+                <img class="cards-image" src="images/content/product/hotel-4.jpg" width="300" height="212"
+                  alt="Скала на фоне звёздного неба.">
               </a>
               <span class="cards-item-service">Гостиница</span>
               <span class="cards-item-price">От 1500 ₽</span>
@@ -241,8 +254,8 @@
         </ul>
 
         <ul class="pagination list">
-          <li class="pagination-item">
-            <a class="pagination-item-link link pagination-item-link__current">1</a>
+          <li class="pagination-item pagination-item-current">
+            <a class="pagination-item-link link pagination-item-link-current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-item-link link" href="#">2</a>
@@ -253,8 +266,8 @@
           <li class="pagination-item">
             <a class="pagination-item-link link" href="#">4</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-item-link link pagination-item-link__empty">...</a>
+          <li class="pagination-item pagination-item-empty">
+            <a class="pagination-item-link link pagination-item-link-empty">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-item-link link" href="#">10</a>
@@ -277,17 +290,17 @@
       <div class="social">
         <ul class="social-list list">
           <li class="social-item">
-            <a class="social-item-link link social-item-link__vkontakte" href="https://vk.com/htmlacademy">
+            <a class="social-item-link link social-item-link-vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-item-link link social-item-link__telegram" href="https://t.me/htmlacademy">
+            <a class="social-item-link link social-item-link-telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-item-link link social-item-link__youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social-item-link link social-item-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
@@ -298,7 +311,8 @@
       </div>
       <div class="copyright">
         <a class="copyright-logo link" href="https://htmlacademy.ru">
-          <img class="copyright-logo" src="images/content/logo-htmlacademy.svg" width="115" height="33" alt="Логотип разработчика.">
+          <img class="copyright-logo" src="images/content/logo-htmlacademy.svg" width="115" height="33"
+            alt="Логотип разработчика.">
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
