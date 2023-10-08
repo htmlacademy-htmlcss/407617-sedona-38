@@ -63,13 +63,16 @@ html {
 }
 
 .button {
+  padding: 8px 50px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #ffffff;
   background-color: #756157;
+  text-align: center;
   text-transform: uppercase;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -163,6 +166,11 @@ html {
   padding: 40px 70px 30px;
 }
 
+.phone {
+  width: 340px;
+  text-align: center;
+}
+
 .phone-link {
   font-size: 40px;
   line-height: 40px;
@@ -197,6 +205,7 @@ html {
 }
 
 .advantages-description {
+  padding-top: 25px;
   padding-bottom: 90px;
 }
 
@@ -221,12 +230,12 @@ html {
   width: 230px;
   padding: 103px 85px;
   text-align: center;
-  box-sizing: content-box;
 }
 
 
 .advantages-item-headline {
-  margin: 0;
+  width: 175px;
+  margin: 0 auto;
   padding-bottom: 30px;
   font-size: 24px;
   line-height: 28px;
@@ -262,6 +271,7 @@ html {
 }
 
 .services-description {
+  padding-top: 25px;
   padding-bottom: 64px;
 }
 
@@ -301,8 +311,12 @@ html {
   padding-bottom: 96px;
 }
 
+.search-description {
+  padding-top: 20px;
+  padding-bottom: 54px;
+}
+
 .search-button {
-  padding: 0 50px;
   font-size: 20px;
   line-height: 36px;
   background-color: #756157;
@@ -324,22 +338,63 @@ html {
 }
 
 .subscribe-description {
+  width: 475px;
+  padding-top: 20px;
+  padding-bottom: 54px;
   color: #ffffff;
 }
 
+.subscribe-form input {
+  width: 100%;
+  padding: 12px 20px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.subscribe-form input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* wrong decision. i'll think of something else */
 .subscribe-button {
+  position: absolute;
+  right: 357px;
   font-size: 20px;
   line-height: 36px;
   background-color: #82b3d3;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
 /* Catalog */
 
 .main-catalog-title {
   position: absolute;
+  margin: 0;
+  padding-top: 35px;
   padding-left: 70px;
   color: #ffffff;
   cursor: default;
+}
+
+.breadcrumbs {
+  display: flex;
+  font-size: 16px;
+  line-height: 21px;
+  padding-bottom: 40px;
+}
+
+.breadcrumbs-item-link-home {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  background-image: url("../images/content/icons/house-breadcrumbs.svg");
+  background-repeat: no-repeat;
 }
 
 /* Filter */
@@ -384,7 +439,7 @@ html {
 }
 
 .filter-button-reset {
-  background-color: inherit;
+  background-color: transparent;
 }
 
 /* Search-group */
